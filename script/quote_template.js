@@ -7,7 +7,7 @@ const composeQuote = (author,avatarLink, quote) =>{
         </div>
         <span class="title gradient">Quote Composer</span>
         <div class="main-content">
-            <img id="avatar-img" class="avatar" alt="avatar" src="${avatarLink}" crossorigin="user-credentials"/>
+            <img id="avatar-img" class="avatar" alt="avatar" src="${avatarLink}" crossorigin="anonymous"/>
             <div class="bubble tip gradient">${quote}</div>
         </div>
         <div class="footer gradient">- ${author}</div>
