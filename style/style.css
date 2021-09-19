@@ -1,0 +1,172 @@
+
+
+.polygon-wraper{
+    filter:drop-shadow(-1px 2px 4px #656);
+}
+
+.polygon{
+    display:flex;
+    flex-direction: column;
+    width:600px;
+    height:fit-content;
+    background: beige;
+    border-radius:10px;
+    border-top:5px solid rgb(235, 66, 66);
+    margin:50px auto;
+    clip-path:polygon(0 0, 560px 0, 600px 40px, 600px 600px, 0 600px);
+}
+
+.fold-wraper{
+    filter:drop-shadow(-1px 1px 2px #656);
+    align-self: flex-end;
+}
+
+.fold{
+    background: beige; width: 35px; height: 35px;
+    clip-path: polygon(0 0, 35px 35px, 0 35px);
+    border-radius:2px;
+}
+
+.title{
+    background:rgb(235, 66, 66);
+    color:#fff;
+    border-radius:5px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    text-align:center;
+    width: fit-content;
+    padding:10px;
+    align-self: center;
+    box-shadow: 1px 2px #656;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+}
+
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(235, 66, 66);
+    border-radius: 50%;
+    border-radius: 50%;
+    margin: 20px;
+    align-self: flex-start;
+    box-shadow: 1px 2px #656;
+}
+
+.bubble{
+    width: 300px;
+    margin: 40px 50px 50px 10px;
+    background: rgb(235, 66, 66);
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    align-self: flex-end;
+    font-weight: 400;
+    font-size:20px;
+    color: #fff;
+    font-family: arial;
+    position:relative;
+    box-shadow: 1px 2px #656;
+}
+
+.tip:before{
+    content:"";
+    width: 0px;
+    height: 0px;
+    position:absolute;
+    border-left:10px solid transparent;
+    border-right: 10px solid rgb(235, 66, 66);
+    border-top: 10px solid rgb(235, 66, 66);
+    border-bottom:10px solid transparent;
+    left: -12px;
+    top:20px;
+}
+
+.footer{
+    background:rgb(235, 66, 66);
+    text-align: center;
+    color:#fff;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+    font-family: Arial;
+    font-weight: bolder;
+    
+}
+
+
+.gradient{
+    background-image: linear-gradient(to right, rgb(235, 66, 66), orange);
+}
+
+.composer-section{
+    display: flex;
+    flex-direction:column;
+}
+
+#composer{
+    width: 400px;
+    height: fit-content;
+    align-self: center;
+    background:beige;
+    margin:20px;
+    box-shadow:2px 4px #656;
+    border:1px solid black;
+    padding:35px;
+    border-radius:10px;
+}
+
+#composer label{
+    color:rgb(235, 66, 66);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#composer input[type="text"], input[type="url"]{
+    height: 40px;
+    width: 400px;
+} 
+
+#quote{
+    height: 120px;
+    width: 400px;
+}
+
+#composer input[type="text"], input[type="url"], textarea, #compose{
+    border:1px solid rgb(235, 66, 66);
+}
+
+#composer input[type="text"], input[type="url"], #compose, textarea{
+    border-radius: 8px;
+}
+
+#compose{
+    color:#fff;
+    padding:6px;
+    text-decoration: none;
+}
+
+#compose:hover{
+    color:rgb(235, 66, 66);
+    background: #fff;
+    cursor: pointer;
+}
+
+#composed-quote-section{
+    display: flex;
+    flex-direction: column;
+    margin:50px auto;
+    box-shadow: 2px 4px #656;
+}
+
+#downloadBtn{
+    align-self:center;
+    cursor: pointer;
+    text-decoration: none;
+}
