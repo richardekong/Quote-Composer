@@ -45,14 +45,14 @@
             composeBtn.onclick = (evt) =>{
                 
                 let author = authorInput.value;
-                let quote = quoteInput.value;
+                let quote= quoteInput.value;
                 let avatarURL = avatarLinkInput.value;
             
                 if (!author || !quote || !avatarURL) {
-                    throw "";
+                    throw "Provide all values for author, quote and avatar link";
                 }
 
-                composedQuoteSection.innerHTML = (composeQuote(author, avatarURL,quote)).innerHTML;
+                composedQuoteSection.innerHTML = (composeQuote(author, avatarURL, quote)).innerHTML;
                 downloadImage(composedQuoteSection, author);
             
             };
@@ -61,7 +61,7 @@
 
             const downloadImage = (element, quoteAuthor) =>{
                 domtoimage.toBlob(element)
-                .then((blob) => saveAs(blob, `${quoteAuthor}.png`))
+                .then((blob) => saveAs(blob, `${quoteAuthor}\u0020${Date.now()}.png`))
                 .catch((error)=> {
                     alert("Failed to download image.");
                 });
